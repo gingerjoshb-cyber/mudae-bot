@@ -9,7 +9,7 @@ intents.guilds = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Replace with your actual Discord channel ID where you want the bot to roll
-CHANNEL_ID = 1526629132191137792  
+CHANNEL_ID = 1540778850865254582  
 
 @bot.event
 async def on_ready():
