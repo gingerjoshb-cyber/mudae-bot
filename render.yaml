@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: mudae-bot
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python EzMudae.py --rr 120 --cr 180
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
